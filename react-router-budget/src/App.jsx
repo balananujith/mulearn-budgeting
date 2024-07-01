@@ -3,7 +3,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-//Route
+//Routes
 import Dashboard, { dashboardLoader } from "./assets/pages/Dashboard";
 import Error from "./assets/pages/Error";
 //Layouts
