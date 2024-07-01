@@ -7,7 +7,6 @@ import wave from "../assets/wave.svg";
 
 //components
 import Nav from '../components/Nav';
-
 //helper functions
 import { fetchData } from '../helpers';
 //loader
@@ -17,14 +16,15 @@ export function mainLoader(){
 }
 import React from 'react'
 
+
 const Main = () => {
   const {userName} = useLoaderData()
     return (
-    <div>
-      <Nav />
-      <h1>main</h1>
+    <div className="Layout">
+      <Nav userName={userName} />
+      
      <main><Outlet/></main>
-     <img src="" alt="" />
+     <img src={wave} alt="" />
     </div>
   )
 }
